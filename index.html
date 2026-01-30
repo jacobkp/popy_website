@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Popy – A home for all the misfits. Save articles, notes, meetings, and more in one searchable place.">
+  <meta name="keywords" content="productivity, notes, second brain, personal knowledge management">
+  <meta name="author" content="Popy">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Popy – A home for all the misfits">
+  <meta property="og:description" content="The tabs you'll never read. The links you WhatsApp to yourself. They finally have a place.">
+  <meta property="og:url" content="https://popy.app">
+
+  <title>Popy | organise your ideas</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="public/images/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="js/main.js" as="script">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo"><img src="public/images/logo.png" alt="Popy logo">Popy</a>
+    <nav class="header-nav">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="download">
+    <h1>A home for all the misfits.</h1>
+    <p class="hero-pain">The <strong>bookmarks</strong> you bury. The <strong>links</strong> you WhatsApp to yourself. The <strong>meeting notes</strong> and <strong>tasks</strong> stuck in the wrong apps.</p>
+    <p class="hero-resolve"><strong>Together</strong> in one place. <strong>Ready</strong> when you need them.</p>
+    <div class="hero-cta">
+      <a href="#" class="btn btn-primary">Download Popy for macOS</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-header">
+      <div class="section-label">What Popy does</div>
+      <h2>Everything in one place. All searchable.</h2>
+    </div>
+
+    <div class="feature-tabs">
+      <div class="tab-nav" role="tablist">
+        <button class="tab-btn active" data-tab="notes" role="tab" aria-selected="true">
+          <span class="tab-label"><span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><span class="tab-title">Notes & Voice</span></span>
+          <span class="tab-subtitle">Type or speak your thoughts</span>
+        </button>
+        <button class="tab-btn" data-tab="meetings" role="tab" aria-selected="false">
+          <span class="tab-label"><span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span><span class="tab-title">Meetings</span></span>
+          <span class="tab-subtitle">Record, transcribe, summarize</span>
+        </button>
+        <button class="tab-btn" data-tab="reads" role="tab" aria-selected="false">
+          <span class="tab-label"><span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span><span class="tab-title">Read & Discover</span></span>
+          <span class="tab-subtitle">Articles, tools, and bookmarks</span>
+        </button>
+        <button class="tab-btn" data-tab="ai" role="tab" aria-selected="false">
+          <span class="tab-label"><span class="tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 6.5L20.5 10l-6.5 2L12 18.5 10 12l-6.5-1.5L10 8.5z"/><path d="M5 18l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></svg></span><span class="tab-title">Auto Organized</span></span>
+          <span class="tab-subtitle">Everything tagged, linked, and findable</span>
+        </button>
+      </div>
+
+      <div class="tab-panels">
+        <!-- Tab 1: Notes & Voice -->
+        <div class="tab-panel active" data-tab="notes" role="tabpanel">
+          <div class="tab-cards">
+            <div class="tab-card">
+              <h4 class="tab-card-title">Text Notes</h4>
+              <p class="tab-card-text">Rich text with images, checklists, and inline tasks. @mention people to build interaction history across everything you capture.</p>
+            </div>
+            <div class="tab-card">
+              <h4 class="tab-card-title">Voice Memos</h4>
+              <p class="tab-card-text">Speak naturally, get searchable text. Voice memos are transcribed instantly and connected to your notes, tasks, and people.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Meetings -->
+        <div class="tab-panel" data-tab="meetings" role="tabpanel">
+          <div class="tab-cards">
+            <div class="tab-card">
+              <h4 class="tab-card-title">Record & Transcribe</h4>
+              <p class="tab-card-text">Auto-detects Zoom, Meet, and Teams. Full transcription with speaker identification — no extra apps or browser tabs needed.</p>
+            </div>
+            <div class="tab-card">
+              <h4 class="tab-card-title">Summarize & Act</h4>
+              <p class="tab-card-text">AI-generated summaries and meeting minutes. Action items are extracted as tasks automatically, so nothing falls through.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Read & Discover -->
+        <div class="tab-panel" data-tab="reads" role="tabpanel">
+          <div class="tab-cards">
+            <div class="tab-card">
+              <h4 class="tab-card-title">Save & Read</h4>
+              <p class="tab-card-text">One-click browser extension saves articles with full content extraction. Read distraction-free, even offline.</p>
+            </div>
+            <div class="tab-card">
+              <h4 class="tab-card-title">Track & Organize</h4>
+              <p class="tab-card-text">Track tools and products you discover — from To Try, to Tried, to Using. Organize everything with folders and tags.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Auto Organized -->
+        <div class="tab-panel" data-tab="ai" role="tabpanel">
+          <div class="tab-cards">
+            <div class="tab-card">
+              <h4 class="tab-card-title">Smart Search</h4>
+              <p class="tab-card-text">One search across notes, articles, meetings, and tasks. AI-powered summaries and citations surface exactly what you need.</p>
+            </div>
+            <div class="tab-card">
+              <h4 class="tab-card-title">Auto Tags & Links</h4>
+              <p class="tab-card-text">Titles, tags, and folders are suggested automatically. Related content surfaces when you need it — connections you'd miss.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integration + Privacy Message -->
+    <div class="integration">
+      <h3>One timeline. All connected.<br>Your thoughts stay yours.</h3>
+      <p>Local-first. Your data lives on your device, not our servers. No AI training on your notes, no selling your attention, no creepy suggestions.</p>
+      <p class="pricing-teaser">Generous free tier. Paid plans launching soon.</p>
+    </div>
+  </section>
+
+  <!-- Misfits Section -->
+  <section class="misfits">
+    <div class="misfits-inner">
+      <div class="section-label">Sound familiar?</div>
+      <h2>These don't belong there. You know it.</h2>
+
+      <div class="misfit-items">
+        <div class="misfit-item">
+          <h4>Tabs aren't a reading list.</h4>
+          <p>You open articles meaning to read them. They pile up. Eventually you declare bankruptcy and close them all.</p>
+        </div>
+
+        <div class="misfit-item">
+          <h4>WhatsApp isn't a filing cabinet.</h4>
+          <p>You send links to yourself because it's fast. Then scroll through months of self-messages looking for that one thing.</p>
+        </div>
+
+        <div class="misfit-item">
+          <h4>Your notes app isn't a second brain.</h4>
+          <p>Thoughts scattered across three apps and a random Google Doc. None of them talk to each other.</p>
+        </div>
+
+        <div class="misfit-item">
+          <h4>Meeting notes shouldn't live in exile.</h4>
+          <p>You wrote down what you agreed to. Somewhere. In some app. Good luck finding it when you need it.</p>
+        </div>
+      </div>
+
+      <div class="misfits-transition">
+        <p><em>These aren't bad habits. They're good instincts with nowhere to land.</em></p>
+        <p>We made a home for the misfits. Not a perfect system—just a calm, familiar place where everything can exist together, and actually be found again.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <h2>A little help goes a long way.</h2>
+    <p>Popy won't make you superhuman. Just a bit more on top of things.</p>
+    <a href="#" class="btn btn-primary">Download Popy for macOS</a>
+    <a href="#" class="extension-link">Get the Chrome Extension</a>
+    <p class="manifesto-link">Want the full story? <a href="manifesto.html">Read the manifesto</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="manifesto.html">Manifesto</a>
+    </div>
+    <p>Popy · Made for people who save things</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

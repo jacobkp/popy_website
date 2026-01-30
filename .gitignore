@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Reference docs (not for production)
+ref_docs/
+
+# Placeholder files
+public/images/PLACE_LOGO_HERE.txt
+
+# Node (if added later)
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+.cache/
