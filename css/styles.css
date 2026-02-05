@@ -261,6 +261,7 @@ header.scrolled {
 }
 
 .hero-tagline {
+  display: inline-block;
   font-size: 0.72rem;
   font-style: italic;
   font-weight: 500;
