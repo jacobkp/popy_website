@@ -236,15 +236,15 @@ header.scrolled {
 
 .hero-subtext {
   text-align: left;
-  max-width: 460px;
+  max-width: 520px;
   margin: 0 auto 40px;
 }
 
 .hero-subtext p {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   color: var(--color-text-secondary);
-  line-height: 1.6;
-  margin-bottom: 4px;
+  line-height: 1.55;
+  margin-bottom: 6px;
 }
 
 .hero-subtext strong {
@@ -838,11 +838,11 @@ footer p {
   }
 
   .hero-subtext {
-    max-width: 380px;
+    max-width: 420px;
   }
 
   .hero-subtext p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .features {
@@ -923,7 +923,7 @@ footer p {
   }
 
   .hero-subtext p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
 
   .btn {
