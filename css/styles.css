@@ -236,26 +236,20 @@ header.scrolled {
 
 .hero-subtext {
   text-align: left;
-  max-width: 520px;
+  max-width: 680px;
   margin: 0 auto 40px;
 }
 
 .hero-subtext p {
-  font-size: 1.35rem;
-  color: var(--color-text-secondary);
-  line-height: 1.55;
-  margin-bottom: 6px;
-}
-
-.hero-subtext strong {
+  font-size: 2.8rem;
   color: var(--color-text);
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
-.hero-subtext-cta {
-  color: var(--color-teal) !important;
-  margin-top: 12px !important;
-  font-weight: 500;
+.hero-subtext .teal {
+  color: var(--color-teal);
 }
 
 .hero-cta {
@@ -838,11 +832,11 @@ footer p {
   }
 
   .hero-subtext {
-    max-width: 420px;
+    max-width: 100%;
   }
 
   .hero-subtext p {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
 
   .features {
@@ -919,11 +913,11 @@ footer p {
 
   .hero-subtext {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-subtext p {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .btn {
