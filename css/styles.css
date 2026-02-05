@@ -261,12 +261,11 @@ header.scrolled {
 }
 
 .hero-tagline {
-  display: inline-block;
-  font-size: 0.72rem;
+  font-size: 1.1rem;
   font-style: italic;
   font-weight: 500;
-  color: var(--color-text);
-  letter-spacing: 0.01em;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
   margin-top: 16px;
 }
 
