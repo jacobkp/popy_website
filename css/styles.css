@@ -236,16 +236,17 @@ header.scrolled {
 
 .hero-subtext {
   text-align: left;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 40px;
 }
 
 .hero-subtext p {
-  font-size: 2.3rem;
+  font-size: 2.25rem;
   color: var(--color-text);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.35;
   margin-bottom: 6px;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtext .teal {
@@ -301,7 +302,7 @@ header.scrolled {
 }
 
 .features-header h2 {
-  font-size: 2.25rem;
+  font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -516,7 +517,7 @@ header.scrolled {
 }
 
 .misfits h2 {
-  font-size: 2.25rem;
+  font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 48px;
@@ -570,7 +571,7 @@ header.scrolled {
 }
 
 .final-cta h2 {
-  font-size: 2.25rem;
+  font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
@@ -836,7 +837,7 @@ footer p {
   }
 
   .hero-subtext p {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   .features {
@@ -844,7 +845,7 @@ footer p {
   }
 
   .features-header h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .tab-nav {
@@ -917,7 +918,7 @@ footer p {
   }
 
   .hero-subtext p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .btn {
