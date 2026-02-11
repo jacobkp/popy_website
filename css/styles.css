@@ -814,75 +814,89 @@ footer p {
 /* ============================================
    Pricing Page
    ============================================ */
+.pricing-hero-cta {
+  text-align: center;
+  padding: 0 32px 60px;
+}
+
+.pricing-hero-cta .hero-tagline {
+  margin-top: 16px;
+}
+
 .pricing-section {
-  max-width: var(--max-width-container);
+  max-width: var(--max-width-prose);
   margin: 0 auto;
   padding: 0 32px 80px;
 }
 
-.pricing-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.pricing-section-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin-bottom: 32px;
 }
 
-.pricing-card {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
-  padding: 32px;
+.pricing-rows {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-.pricing-card-featured {
+.pricing-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg);
+  transition: border-color var(--transition-fast);
+}
+
+.pricing-row:hover {
+  border-color: var(--color-teal-light);
+}
+
+.pricing-row-featured {
   border-color: var(--color-teal);
-  box-shadow: 0 4px 24px rgba(15, 118, 110, 0.1);
-  position: relative;
+  background: rgba(15, 118, 110, 0.02);
 }
 
-.pricing-card-header {
-  margin-bottom: 20px;
+.pricing-row-plan {
+  flex-shrink: 0;
+  width: 140px;
 }
 
 .pricing-plan-name {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 4px;
   color: var(--color-text);
+  margin-bottom: 2px;
 }
 
-.pricing-card-featured .pricing-plan-name {
+.pricing-row-featured .pricing-plan-name {
   color: var(--color-teal);
 }
 
-.pricing-plan-tagline {
-  font-size: 0.9rem;
-  color: var(--color-text-tertiary);
-}
-
-.pricing-price {
-  margin-bottom: 8px;
-}
-
-.pricing-amount {
-  font-size: 2.5rem;
+.pricing-plan-price {
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
   letter-spacing: -0.02em;
 }
 
 .pricing-period {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: var(--color-text-tertiary);
   font-weight: 400;
 }
 
 .pricing-annual {
-  font-size: 0.85rem;
+  display: block;
+  font-size: 0.8rem;
   color: var(--color-text-tertiary);
-  margin-bottom: 16px;
+  margin-top: 2px;
 }
 
 .pricing-save {
@@ -890,21 +904,46 @@ footer p {
   font-weight: 500;
 }
 
-.pricing-description {
+.pricing-row-details p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.pricing-row-details p:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-footnote {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+}
+
+/* Features Section (Pricing Page) */
+.pricing-features-section {
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+.pricing-features-subtitle {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
-  margin-bottom: 24px;
-  line-height: 1.5;
+  margin-bottom: 28px;
 }
 
-.pricing-features {
+.pricing-feature-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px 0;
-  flex-grow: 1;
+  margin: 0 0 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 32px;
 }
 
-.pricing-features li {
+.pricing-feature-list li {
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   padding: 8px 0;
@@ -913,7 +952,7 @@ footer p {
   line-height: 1.5;
 }
 
-.pricing-features li::before {
+.pricing-feature-list li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -925,45 +964,9 @@ footer p {
   border: 2px solid var(--color-teal);
 }
 
-.pricing-features li:first-child {
-  font-weight: 500;
-  color: var(--color-text);
-}
-
-.pricing-features li:first-child::before {
-  display: none;
-}
-
-.pricing-btn {
-  width: 100%;
-  text-align: center;
-}
-
-.pricing-note {
-  font-size: 0.8rem;
-  color: var(--color-text-tertiary);
-  text-align: center;
-  margin-top: 12px;
-}
-
-.pricing-footnote {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--color-text-tertiary);
-}
-
-.pricing-faq {
-  max-width: var(--max-width-prose);
-  margin: 0 auto;
-  padding: 0 32px 80px;
-}
-
-.pricing-faq h2 {
-  font-size: 1.9rem;
+.pricing-asterisk {
+  color: var(--color-teal);
   font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: 32px;
-  text-align: center;
 }
 
 /* ============================================
@@ -1063,18 +1066,21 @@ footer p {
     padding: 0 24px 20px;
   }
 
-  .pricing-cards {
+  .pricing-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pricing-row-plan {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pricing-feature-list {
     grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto 32px;
-  }
-
-  .pricing-card-featured {
-    order: -1;
-  }
-
-  .pricing-faq h2 {
-    font-size: 1.5rem;
   }
 }
 
