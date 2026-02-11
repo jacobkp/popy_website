@@ -499,17 +499,15 @@ header.scrolled {
   letter-spacing: 0.01em;
 }
 
-.pricing-teaser::before {
-  content: '';
-  position: absolute;
-  left: -6px;
-  right: -6px;
-  top: 30%;
-  bottom: 0;
-  background: rgba(15, 118, 110, 0.12);
-  border-radius: 2px 4px 3px 2px;
-  transform: rotate(-0.5deg) skewX(-1deg);
-  z-index: -1;
+.pricing-teaser a {
+  color: var(--color-teal);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+.pricing-teaser a:hover {
+  color: var(--color-teal-dark);
 }
 
 /* ============================================
@@ -814,6 +812,161 @@ footer p {
 }
 
 /* ============================================
+   Pricing Page
+   ============================================ */
+.pricing-section {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.pricing-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card-featured {
+  border-color: var(--color-teal);
+  box-shadow: 0 4px 24px rgba(15, 118, 110, 0.1);
+  position: relative;
+}
+
+.pricing-card-header {
+  margin-bottom: 20px;
+}
+
+.pricing-plan-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--color-text);
+}
+
+.pricing-card-featured .pricing-plan-name {
+  color: var(--color-teal);
+}
+
+.pricing-plan-tagline {
+  font-size: 0.9rem;
+  color: var(--color-text-tertiary);
+}
+
+.pricing-price {
+  margin-bottom: 8px;
+}
+
+.pricing-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.pricing-period {
+  font-size: 1rem;
+  color: var(--color-text-tertiary);
+  font-weight: 400;
+}
+
+.pricing-annual {
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 16px;
+}
+
+.pricing-save {
+  color: var(--color-teal);
+  font-weight: 500;
+}
+
+.pricing-description {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pricing-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-teal-subtle);
+  border: 2px solid var(--color-teal);
+}
+
+.pricing-features li:first-child {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.pricing-features li:first-child::before {
+  display: none;
+}
+
+.pricing-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-note {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.pricing-footnote {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+}
+
+.pricing-faq {
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+.pricing-faq h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 
@@ -908,6 +1061,20 @@ footer p {
 
   .faq-item.open .faq-answer {
     padding: 0 24px 20px;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto 32px;
+  }
+
+  .pricing-card-featured {
+    order: -1;
+  }
+
+  .pricing-faq h2 {
+    font-size: 1.5rem;
   }
 }
 
