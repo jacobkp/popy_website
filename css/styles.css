@@ -159,6 +159,46 @@ header.scrolled {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 28px;
+  height: 20px;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  position: absolute;
+  left: 0;
+  transition: all var(--transition-fast);
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; }
+.hamburger span:nth-child(3) { top: 18px; }
+
+.hamburger.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
 /* ============================================
    Buttons
    ============================================ */
@@ -999,10 +1039,34 @@ footer p {
 
   header {
     padding: 20px 24px;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .header-nav {
-    gap: 16px;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+
+  .header-nav a {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .header-nav a::after {
+    display: none;
   }
 
   .hero {
@@ -1091,10 +1155,6 @@ footer p {
 
 /* Mobile phones */
 @media (max-width: 550px) {
-  .header-nav a {
-    font-size: 13px;
-  }
-
   .hero h1 {
     font-size: 2rem;
   }
