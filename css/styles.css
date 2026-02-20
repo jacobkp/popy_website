@@ -232,6 +232,12 @@ header.scrolled {
   transform: translateY(0);
 }
 
+.btn-disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 .btn-secondary {
   background: white;
   color: var(--color-text);
