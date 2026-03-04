@@ -1032,6 +1032,51 @@ footer p {
 }
 
 /* ============================================
+   MCP Page
+   ============================================ */
+.mcp-capabilities {
+  padding: 80px 32px;
+  background: var(--color-bg-subtle);
+}
+
+.mcp-capabilities-inner {
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+}
+
+.mcp-capabilities h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+}
+
+.mcp-capability-items {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.mcp-capability-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.mcp-capability-item p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.mcp-platform-note {
+  display: block;
+  font-size: 14px;
+  color: var(--color-text-tertiary);
+  margin-top: 24px;
+}
+
+/* ============================================
    Responsive Design
    ============================================ */
 
@@ -1120,7 +1165,8 @@ footer p {
     padding: 60px 24px 80px;
   }
 
-  .misfits {
+  .misfits,
+  .mcp-capabilities {
     padding: 80px 24px;
   }
 
@@ -1200,6 +1246,7 @@ footer p {
 
   .features,
   .misfits,
+  .mcp-capabilities,
   .final-cta {
     padding: 60px 20px;
   }
